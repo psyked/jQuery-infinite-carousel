@@ -16,12 +16,14 @@ jQuery.fn.carousel = function(previous, next, options){
 		firstElementOnViewPort = 1,
 		isAnimating = false;
 		
-		if(numElmts<shownInViewport)
+		if(numElmts < shownInViewport) {
 			compareviewport = numElmts;
-		else
+		}
+		else {
 			compareviewport = shownInViewport;
+		}
+
 		for (i = 0; i < compareviewport; i++) {
-		//for (i = 0; i < shownInViewport; i++) {
 			jQuery(sliderList).css('width',(numElmts+shownInViewport)*increment + increment + "px");
 			jQuery(sliderList).append(jQuery(elmnts[i]).clone());
 		}
