@@ -8,7 +8,7 @@ jQuery.fn.carousel = function(previous, next, options){
 	var sliderList = jQuery(this).children()[0];
 	
 	if (sliderList) {
-		var increment = jQuery(sliderList).children().outerWidth("true"),
+		var increment = jQuery(sliderList).children().outerWidth(true),
 		elmnts = jQuery(sliderList).children(),
 		numElmts = elmnts.length,
 		sizeFirstElmnt = increment,
